@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manito Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="survey">
+            <h2>Survey</h2>
+            <form id="surveyForm">
+                <div class="section">
+                    <h3>기본 질문</h3>
+                    <label for="name">Q1. 당신의 이름은 무엇인가요?</label>
+                    <select id="name" required></select>
+                    <br><br>
+
+                    <label for="manitee">Q2. 당신은 누구의 마니또인가요?</label>
+                    <select id="manitee" required></select>
+                    <br><br>
+                </div>
+
+                <div class="section">
+                    <h3>내 마니또 예상</h3>
+                    <label for="predictedManito">Q3. 당신의 마니또는 누구일 것 같나요?</label>
+                    <select id="predictedManito" required></select>
+                    <br><br>
+
+                    <label>Q4. 당신의 마니또에게 만족하셨나요?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="satisfaction_yes" name="satisfaction" value="yes" required>
+                        <label for="satisfaction_yes">예</label>
+                        <input type="radio" id="satisfaction_no" name="satisfaction" value="no" required>
+                        <label for="satisfaction_no">아니오</label>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="section">
+                    <h3>전체 마니또 예상</h3>
+                    <label>Q5. 전체 마니또를 예상해 보세요!</label>
+                    <br><br>
+                    <label>피마니또 : 마니또</label>
+                    <br><br>
+                    <div id="overallPrediction"></div>
+                    <br><br>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manito Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="setup">
+            <h1>Manito Game</h1>
+            <div id="participantContainer">
+                <div class="participantInput">
+                    <input type="text" class="participantName" placeholder="Enter participant name">
+                </div>
+            </div>
+            <button id="addParticipant">+ Add Participant</button>
+            <button onclick="setupGame()">Start Game</button>
+        </div>
+        <div id="qrcodes" style="display:none;">
+            <h1>Scan QR Code to Start Survey</h1>
+            <div id="qrContainer"></div>
+            <a id="surveyLink" href="#" target="_blank"></a>
+            <div id="submissionStatusContainer"></div>
+            <button id="showResultsButton" style="display:none;" onclick="window.location.href='results.html'">게임 결과 보기</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
